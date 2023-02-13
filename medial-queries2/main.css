@@ -8,12 +8,10 @@ body {
 
 .a, .b, .c, .d, .e, .f {
   justify-content: center;
+  align-items: center;
   background-color: darkblue;
-  text-align: center;
-  vertical-align: center;
   border: black solid 4px;
   display: flex;
-  height: 100px;
 }
 
 .container {
@@ -28,6 +26,7 @@ body {
 
 .b {
   height: 400px;
+  margin-bottom: 1rem;
 }
 
 .c {
@@ -56,11 +55,6 @@ body {
   gap: 1rem;
 }
 
-.bcde-wrapper {
-  flex-direction: column;
-  display: flex;
-  gap: 1rem;
-}
 
 .cde-wrapper {
   display: flex;
@@ -91,8 +85,4 @@ body {
   .a, .b, .c, .d, .e {
     height: 250px;
   }
-
-
-
-
 }

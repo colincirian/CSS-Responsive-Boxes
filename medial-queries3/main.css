@@ -1,5 +1,5 @@
 body {
-  background: peachpuff;
+  background: blue;
   text-align: center;
   vertical-align: middle;
   font-size: 5rem;
@@ -7,10 +7,11 @@ body {
 
 .a, .b, .c, .d, .e, .f, .g, .h {
   justify-content: center;
-  background-color: purple;
+  background-color: darkgray;
   border: black solid 3px;
-  vertical-align: center;
-  text-align: center;
+  vertical-align: middle;
+  align-items: center;
+  display: flex;
 }
 
 .container {
@@ -24,19 +25,32 @@ body {
 }
 
 .h {
-  height: 350px;
+  height: 400px;
   gap: 1rem;
+}
+
+.b, .c, .d, .e, .f, .g {
+  height: 200px;
 }
 
 .bcdefg-wrap {
   display: flex;  
   gap: 1rem;
   justify-content: space-between;
+  flex-direction: column;
 }
 
 .efg-wrap {
   display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
 
+.bcd-wrap {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
 }
 
 .b {
@@ -64,3 +78,26 @@ body {
 }
 
 
+@media only screen and (min-width: 992px) {
+  .h {
+    height: auto;
+    width: 25%;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .bcdefg-wrap {
+    width: 75%;
+    gap: 1rem;
+  }
+
+  .bcdefgh-wrap {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .a, .b, .c, .d, .e, .f, .g {
+    height: 300px;
+  }
+}

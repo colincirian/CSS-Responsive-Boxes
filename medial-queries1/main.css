@@ -7,13 +7,13 @@ body {
 
 .a {
   height: 200px;
-  background-color: red;
+  background-color: gray;
   margin-bottom: 1rem;
 }
 
 .b {
   height: 600px;
-  background-color: blue;
+  background-color: lightblue;
   margin-bottom: 1rem;
 }
 
@@ -28,7 +28,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: darkmagenta solid 3px;
+  border: darkgreen solid 3px;
 }
 
 
