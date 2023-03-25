@@ -33,13 +33,6 @@ body {
   height: 200px;
 }
 
-.bcdefg-wrap {
-  display: flex;  
-  gap: 1rem;
-  justify-content: space-between;
-  flex-direction: column;
-}
-
 .efg-wrap {
   display: flex;
   flex-direction: row;
@@ -51,6 +44,7 @@ body {
   display: flex;
   flex-direction: row;
   gap: 1rem;
+  margin-bottom: 1rem;
 }
 
 .b {
